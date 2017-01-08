@@ -1,11 +1,11 @@
 $fn = 90;
 
 wallThickness = 5.4;
-centerholeDiameter = 10;
+centerholeDiameter = 10.5;
 screwDiameter = 2.75;
 xWidth = 13;
 yWidth = 11.6;
-screwHoleOffset = 1;
+screwHoleOffset = .5;
 heigth = 8.5;
 
 difference(){
@@ -21,12 +21,13 @@ difference(){
     translate([xWidth/2,(yWidth+2*wallThickness)/2,-.5])
         cylinder(d = centerholeDiameter, h=heigth+1 );
     //cut the screw holes
-translate([xWidth/2,(yWidth+2*wallThickness)/2-centerholeDiameter/2-screwDiameter/2-screwHoleOffset,-.5])
+/*translate([xWidth/2,(yWidth+2*wallThickness)/2-centerholeDiameter/2-screwDiameter/2-screwHoleOffset,-.5])
     cylinder(d = screwDiameter, h=heigth+1 );
 translate([xWidth/2,(yWidth+2*wallThickness)/2+centerholeDiameter/2+screwDiameter/2+screwHoleOffset,-.5])
     cylinder(d = screwDiameter, h=heigth+1 );
 translate([xWidth/2+centerholeDiameter/2+screwDiameter/2+screwHoleOffset,(yWidth+2*wallThickness)/2,-.5])
     cylinder(d = screwDiameter, h=heigth+1 );
 translate([xWidth/2-centerholeDiameter/2-screwDiameter/2-screwHoleOffset,(yWidth+2*wallThickness)/2,-.5])
-    cylinder(d = screwDiameter, h=heigth+1 );
+    cylinder(d = screwDiameter, h=heigth+1 );*/
+    cube([xWidth, 1.5, heigth]);
 }
