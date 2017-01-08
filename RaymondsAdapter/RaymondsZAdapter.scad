@@ -29,5 +29,6 @@ translate([xWidth/2+centerholeDiameter/2+screwDiameter/2+screwHoleOffset,(yWidth
     cylinder(d = screwDiameter, h=heigth+1 );
 translate([xWidth/2-centerholeDiameter/2-screwDiameter/2-screwHoleOffset,(yWidth+2*wallThickness)/2,-.5])
     cylinder(d = screwDiameter, h=heigth+1 );*/
-    cube([xWidth, 1.5, heigth]);
+
+    translate([-wallThickness,0,0])color("blue")cube([1.5, xWidth+2*wallThickness, heigth]);
 }
