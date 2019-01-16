@@ -19,7 +19,7 @@ ValleyWidth = RimHeight/5; // Set to RimHeight for a 45 degree valley
 PulleySurface = base_height - (2*RimWidth) - (2*ValleyWidth);
 
 // Hole size
-HoleDiameter = 3.0;
+HoleDiameter = 9.5;
 
 // Adjust for best fit. Smaller = tighter fit
 HoleClearance = 0.1;
