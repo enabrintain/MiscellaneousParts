@@ -19,7 +19,7 @@ maxWidth = 50;
 minWidth = 24;
     
 minX = 0;
-maxX = 1.75*in2mm;
+maxX = 1.5*in2mm;
 minY = 1.125*in2mm;
 maxY = 1.25*in2mm;
 
@@ -31,8 +31,8 @@ CubePoints = [
   [ maxX,maxY,  0 ],  //1
   [ minX,minY,  0 ],  //2
   [ minX,-minY,  0 ],  //3
-  [ maxX+9,-.55*in2mm,mountH ],  //4
-  [ maxX+9,.55*in2mm,mountH],  //5
+  [ maxX+13,-.55*in2mm,mountH ],  //4
+  [ maxX+13,.55*in2mm,mountH],  //5
   [ minX,minY,mountH],  //6
   [ minX,-minY,mountH]];  //7
   
