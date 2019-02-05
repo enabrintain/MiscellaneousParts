@@ -23,7 +23,7 @@ maxX = 1.5*in2mm;
 minY = 1.125*in2mm;
 maxY = 1.25*in2mm;
 
-mountH = .9*in2mm;
+mountH = in2mm;
 mountPts = [ [maxX,-maxY], [maxX,maxY], [minX,minY], [minX,-minY],];
 
 CubePoints = [
